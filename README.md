@@ -1,2 +1,2 @@
-# student-enroll-system
+# Student enrollment
 The MiniZinc Student Enrollment System is a repository designed to facilitate the management and optimization of student enrollment processes using the MiniZinc constraint modeling language. This system provides a comprehensive solution for educational institutions, allowing them to efficiently handle the complexities of student enrollment, course scheduling, and resource allocation.
