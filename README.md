@@ -31,3 +31,18 @@ Given the schedule and student preferences we have to define what assignments ar
 
 1. Students should not waste their time on long boring breaks. For each student and each day we calculate the time they have to spend at the university ("end of the last group" - "start of the of the first group"). We sum these values for the whole week and call it **time spent at the university**. Then we calculate what is the minimal time, the student has to spend at the university — total duration of al the student's classes.  and how much they spend on learning (sum all the classes' durations this day). Difference between these values is the time wasted between classes. Due to the fact that during the semester classes may change, this value in theory could go below zero, but we should assume the `0` is the minimal value. The wasted time is summed for each student and normalized to full hours[^normalized]. We will call this value **break disappointment**.
 2. Students should not attend groups they hate. For each student and each class we calculate difference between their favorite group and the one they have been assigned. We sum those values for each student and will call this value **preference disappointment**.
+
+## How to Run the Project
+
+### Prerequisites
+
+1. **MiniZinc IDE**: Ensure that MiniZinc is installed on your machine. You can download it from [MiniZinc Download Page](https://www.minizinc.org/software.html).
+   
+2. **Project Files**: Ensure that you have all necessary files in the project directory, including `enroll.mzn` and `enroll.mzp`.
+
+### Running the Model
+
+1. Open the **MiniZinc IDE**.
+2. Load the model file `enroll.mzn`.
+3. Run the model by providing appropriate data inputs (if required). You can select a data file from the `data/` directory.
+4. The system will output optimized student enrollments and group assignments based on the provided data.
